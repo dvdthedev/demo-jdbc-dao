@@ -28,7 +28,9 @@ public class Program {
 
         System.out.println("TEST #2 : find by Department");
 
-        Department department = new Department(null, 2);
+        Department department = new Department();
+
+        department.setId(2);
 
         List<Seller> list = sellerDao.findByDepartment(department);
 
