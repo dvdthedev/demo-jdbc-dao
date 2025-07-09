@@ -24,35 +24,35 @@ public class Program2 {
         System.out.println("TEST #1 : Find by Id: ");
 
         System.out.println(department);
-//
-//        System.out.println("TEST #2 : Department insertion: ");
-//
-//        Department newDepartment = new Department("Hardware");
-//
-//        departmentDao.insert(newDepartment);
-//
-//        System.out.println("Inserted! department id: " + newDepartment.getId());
-//
-//        System.out.println("TEST #3 : Department update: ");
-//
-//        Department departmentForFind = departmentDao.findById(9);
 
-//        departmentForFind.setName("Tools");
-//
-//        departmentDao.update(departmentForFind);
-//
-//        System.out.println("TEST #4 : Deparment delete");
-//
-//        System.out.print("Enter department id for delete test: ");
-//
-//        int departmentId = sc.nextInt();
-//
-//        departmentDao.deleteById(departmentId);
-//
-//        System.out.println("Delete completed");
-//
-//        System.out.println("TEST #5 : Deparment list");
-//
+        System.out.println("TEST #2 : Department insertion: ");
+
+        Department newDepartment = new Department("Hardware");
+
+        departmentDao.insert(newDepartment);
+
+        System.out.println("Inserted! department id: " + newDepartment.getId());
+
+        System.out.println("TEST #3 : Department update: ");
+
+        Department departmentForFind = departmentDao.findById(9);
+
+        departmentForFind.setName("Tools");
+
+        departmentDao.update(departmentForFind);
+
+        System.out.println("TEST #4 : Deparment delete");
+
+        System.out.print("Enter department id for delete test: ");
+
+        int departmentId = sc.nextInt();
+
+        departmentDao.deleteById(departmentId);
+
+        System.out.println("Delete completed");
+
+        System.out.println("TEST #5 : Deparment list");
+
         List<Department> allDepartments = departmentDao.findAll();
         System.out.println(allDepartments);
 
