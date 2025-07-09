@@ -21,56 +21,41 @@ public class Program2 {
 
         Department department = departmentDao.findById(1);
 
-        System.out.println("TEST #1 : find by Id: ");
+        System.out.println("TEST #1 : Find by Id: ");
 
         System.out.println(department);
+//
+//        System.out.println("TEST #2 : Department insertion: ");
+//
+//        Department newDepartment = new Department("Hardware");
+//
+//        departmentDao.insert(newDepartment);
+//
+//        System.out.println("Inserted! department id: " + newDepartment.getId());
+//
+//        System.out.println("TEST #3 : Department update: ");
+//
+//        Department departmentForFind = departmentDao.findById(9);
 
-        System.out.println("TEST #1 : department insertion: ");
-
-        Department newDepartment = new Department("Hardware");
-
-        departmentDao.insert(newDepartment);
-
-        System.out.println("Inserted! department id: " + newDepartment.getId());
-//        System.out.println();
+//        departmentForFind.setName("Tools");
 //
-//        System.out.println("TEST #2 : find by Department");
+//        departmentDao.update(departmentForFind);
 //
-//        Department department = new Department(null, 2);
+//        System.out.println("TEST #4 : Deparment delete");
 //
-//        List<Seller> list = sellerDao.findByDepartment(department);
+//        System.out.print("Enter department id for delete test: ");
 //
-//        for (Seller obj : list){
-//            System.out.println(obj);
-//        }
+//        int departmentId = sc.nextInt();
 //
-//        System.out.println("TEST #3 : Seller insert");
-//
-//        Seller newSeller = new Seller("Deivid", "dvd@gmail.com", new Date(1992 ,5,2), 3000.0, department);
-//
-//        sellerDao.insert(newSeller);
-//
-//        System.out.println("Inserted! New id: " + newSeller.getId());
-//
-//        System.out.println("TEST #4 : Seller update");
-//
-//        seller = sellerDao.findById(1);
-//
-//        seller.setName("Carlos Wayne");
-//
-//        sellerDao.update(seller);
-//
-//        System.out.println("Update completed!");
-//
-//        System.out.println("TEST #6 : Seller delete");
-//
-//        System.out.print("Enter seller id for delete test: ");
-//
-//        int sellerId = sc.nextInt();
-//
-//        sellerDao.deleteById(sellerId);
+//        departmentDao.deleteById(departmentId);
 //
 //        System.out.println("Delete completed");
+//
+//        System.out.println("TEST #5 : Deparment list");
+//
+        List<Department> allDepartments = departmentDao.findAll();
+        System.out.println(allDepartments);
+
 
         sc.close();
 

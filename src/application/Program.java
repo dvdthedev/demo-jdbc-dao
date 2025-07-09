@@ -66,6 +66,10 @@ public class Program {
 
         System.out.println("Delete completed");
 
+        List<Seller> allSellersList = sellerDao.findAll();
+
+        System.out.println(allSellersList);
+
         sc.close();
 
     }
